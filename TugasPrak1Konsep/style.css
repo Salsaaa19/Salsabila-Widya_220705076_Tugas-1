@@ -1,0 +1,180 @@
+.navbar {
+    padding: 1rem; /* Menambah padding pada navbar */
+    font-size: 1.1rem; /* Memperbesar ukuran font navbar */
+}
+
+.navbar-brand {
+    font-size: 1.5rem; /* Memperbesar ukuran font untuk brand navbar */
+}
+
+.nav-link {
+    font-size: 1.2rem; /* Memperbesar ukuran font untuk item link navbar */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: pink;
+    color: black;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0px 100px;
+    padding: 20px;
+}
+
+aside, article {
+    padding: 20px;
+    background-color: lightgray;
+    margin: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+article {
+    flex: 3;
+    text-align: justify;
+}
+
+article h2 {
+    text-align: center;
+    border: 2px solid darkgray;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: black;
+    margin-top: 0.5rem;
+}
+
+aside {
+    flex: 1;
+    text-align: center;
+}
+
+img, figure img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+figcaption {
+    text-align: center;
+    padding: 5px;
+    font-size: small;
+    color: #7d7d7d;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    border: 1px solid #DDD;
+    padding: 10px;
+    text-align: left;
+    font-size: 12px;
+}
+
+.table th {
+    background-color: #292828;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        margin: 0px 20px;
+    }
+
+    article, aside {
+        margin: 5px 0;
+    }
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tal"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.radio-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+
+h2 {
+    text-align: center;
+    border: 2px solid darkgray;
+    padding: 15px 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto; /* Center the h2 and add top margin */
+    width: auto; /* Adjust width to content */
+    max-width: 600px; /* Limit the maximum width */
+    color: black;
+    font-weight: bold;
+}
+
+.button-daftar {
+    width: 100%;
+    padding: 10px;
+    background-color: lightgray;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: pink;
+}
